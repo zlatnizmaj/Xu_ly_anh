@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../MIT_60001/Assignments/.idea/Assignments.iml" filepath="$PROJECT_DIR$/../MIT_60001/Assignments/.idea/Assignments.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/MIT_60001/.idea/MIT_60001.iml" filepath="$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/MIT_60001/.idea/MIT_60001.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/XLA_MojProject.iml" filepath="$PROJECT_DIR$/.idea/XLA_MojProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Advanced_Algorithm/.idea/Advanced_Algorithm.iml" filepath="$PROJECT_DIR$/../Advanced_Algorithm/.idea/Advanced_Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/XLA.iml" filepath="$PROJECT_DIR$/.idea/XLA.iml" />
     </modules>
   </component>
 </project>

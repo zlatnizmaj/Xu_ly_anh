@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="Assignments" />
     <orderEntry type="module" module-name="MIT_60001" />
     <orderEntry type="module" module-name="MIT_60001" />
+    <orderEntry type="module" module-name="Advanced_Algorithm" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

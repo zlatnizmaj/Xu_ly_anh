@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e49873e2-2008-48f5-a28c-1290b42b05f4" name="Default" comment="" />
+    <list default="true" id="e49873e2-2008-48f5-a28c-1290b42b05f4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/XLA_MojProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/XLA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +19,7 @@
       <file leaf-file-name="getStarted.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getStarted.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="357">
               <caret line="23" column="3" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -23,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chuong4_Trainingp61.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chuong4_Trainingp61.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chuong4_Trainingp61.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
@@ -35,6 +40,11 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="lecture2_code.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Advanced_Algorithm/Moj practice MIT 60001/Lecture codes/lecture2_code.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -43,6 +53,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Advanced_Algorithm" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,32 +73,46 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MojProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MojProject" type="462c0819:PsiDirectoryNode" />
+              <item name="XLA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xu_ly_anh" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MojProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MIT_60001" type="462c0819:PsiDirectoryNode" />
+              <item name="XLA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Advanced_Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XLA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Advanced_Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Moj practice MIT 60001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XLA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Advanced_Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="Moj practice MIT 60001" type="462c0819:PsiDirectoryNode" />
+              <item name="Lecture codes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/MIT_60001" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Advanced_Algorithm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,9 +131,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Chuong4_Trainingp61">
     <configuration name="Chuong4_Trainingp61" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="XLA_MojProject" />
+      <module name="XLA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -124,7 +151,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="getStarted" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="XLA_MojProject" />
+      <module name="XLA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -142,7 +169,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="ps1aMoj" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="XLA_MojProject" />
+      <module name="XLA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -188,12 +215,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1852123" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17423134" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32861635" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32861635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32861635" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -211,6 +238,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/getStarted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="3" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chuong4_Trainingp61.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getStarted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="3" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chuong4_Trainingp61.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/getStarted.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -242,16 +309,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/77.py" />
-    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/ps1/ps1aMoj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/ps1/ps1aMoj.py" />
     <entry file="file://$PROJECT_DIR$/getStarted.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="357">
           <caret line="23" column="3" selection-start-line="23" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -259,20 +320,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/MIT6_0001-Introdution-to-Computer-Science-and-Programming-in-Python-solutions/Lecture codes/List_in_Python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/MIT6_0001-Introdution-to-Computer-Science-and-Programming-in-Python-solutions/Lecture codes/lecture3_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/MIT6_0001-Introdution-to-Computer-Science-and-Programming-in-Python-solutions/Lecture codes/List_in_Python.py" />
+    <entry file="file://$PROJECT_DIR$/../../06 Advanced Algorithm/02 Moj Python Treba/MIT 6001/Assignment/MIT6_0001-Introdution-to-Computer-Science-and-Programming-in-Python-solutions/Lecture codes/lecture3_code.py" />
     <entry file="file://$PROJECT_DIR$/Chuong4_Trainingp61.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -282,6 +331,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Advanced_Algorithm/Moj practice MIT 60001/Lecture codes/lecture2_code.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
