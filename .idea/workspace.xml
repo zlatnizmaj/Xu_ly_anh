@@ -124,7 +124,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="getStarted" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="XLA_MojProject" />
+      <module name="XLA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
