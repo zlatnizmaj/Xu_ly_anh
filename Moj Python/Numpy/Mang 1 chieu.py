@@ -6,8 +6,10 @@ numpy trang web machinelearningcoban.com, fundaml.com
 import numpy as np
 # khoi tao mang 1 chieu
 x = np.array([1, 2, 3])
+y = np.array([5, 6, 7], dtype= np.float)
 
 print(x)
+print(y)
 #help(np.array)
 print(type(x[0]))
 
