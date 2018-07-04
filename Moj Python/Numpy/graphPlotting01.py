@@ -127,27 +127,27 @@ import numpy as np
 # Here we have defined bins = 10. So, there are a total of 100/10 = 10 intervals.
 # """
 # ##########################################
-# # Plotting Scatter Plot (do thi phan tan)
-# # x-axisvalues
-# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# # y-axis values
-# y = [2, 4, 5, 7, 6, 8, 9, 11, 12, 12]
-#
-# # plotting points as a scatter plot
-# plt.scatter(x, y, label="stars", color="green",
-#             marker="*", s=30)
-#
-# # x-axis label
-# plt.xlabel('x - axis')
-# # frequency label
-# plt.ylabel('y - axis')
-# # plot title
-# plt.title('My scatter plot!')
-# # showing legend
-# plt.legend()
-#
-# # function to show the plot
-# plt.show()
+# Plotting Scatter Plot (do thi phan tan)
+# x-axisvalues
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# y-axis values
+y = [2, 4, 5, 7, 6, 8, 9, 11, 12, 12]
+
+# plotting points as a scatter plot
+plt.scatter(x, y, label="stars", color="green",
+            marker="*", s=30)
+
+# x-axis label
+plt.xlabel('x - axis')
+# frequency label
+plt.ylabel('y - axis')
+# plot title
+plt.title('My scatter plot!')
+# showing legend
+plt.legend()
+
+# function to show the plot
+plt.show()
 ###########################################
 # Pie-chart
 # defining labels
@@ -155,12 +155,14 @@ activities = ['eat', 'sleep', 'work', 'play']
 
 # portion covered by each label
 slices = [3, 7, 8, 6]
-colors = ['y', 'r', 'g', 'b']
+sizes = [175, 50, 25, 50]
+colors = ['r', 'y', 'g', 'b']
 
 # plotting the pie chart
-plt.pie(slices, labels = activities, colors = colors, startangle = -45,
-        shadow = True, explode=(0,0,0.1,0), radius = 1.2, autopct= '%1.2f%%')
-
+patches, texts, autotexts= plt.pie(slices, counterclock = False, labels = activities, colors = colors, startangle = -270,
+        shadow = True, explode=(0,0,0.1,0), autopct= '%1.2f%%')
+print(patches, texts, autotexts)
+plt.axis('equal')
 plt.legend()
 plt.show()
 
