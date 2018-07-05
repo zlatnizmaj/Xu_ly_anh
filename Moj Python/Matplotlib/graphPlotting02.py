@@ -65,7 +65,27 @@ Image.open('Figure_1.png').show()
 
 
 ############################################
+# functions to genearte coordinates
+def create_plot(ptype):
+    # x-axis values
+    x = np.arange(0, 5, 0.01)
 
+    # y-axis values
+    y = 0
+    if ptype == 'sin':
+        # a sine wave
+        y = np.sin(2*np.pi*x)
+    elif ptype == 'exp':
+        # negative exponential function
+        y = np.exp(-x)
+    elif ptype == 'hybrid':
+        # a damped sin wave
+        y = (np.sin(2*np.pi*x))*(np.exp(-x))
+    return (x, y)
+# setiing a style to use
+plt.style.use('ggplot')
 
+# defining subplots and their positions
+plt1 = plt.subplot2grid((11, ))
 
 
