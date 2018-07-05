@@ -1,0 +1,18 @@
+missing module named resource - imported by posix, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named posix - imported by os, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named _posixsubprocess - imported by subprocess, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named org - imported by pickle, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named readline - imported by cmd, code, pdb, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named _winreg - imported by platform, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named 'java.lang' - imported by platform, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named termios - imported by tty, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py, getpass
+missing module named grp - imported by shutil, tarfile, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py, netrc, getpass
+missing module named _dummy_threading - imported by dummy_threading, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py
+missing module named 'org.python' - imported by copy, D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py, xml.sax
+missing module named matplotlib - imported by D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\demo_gridspec01.py

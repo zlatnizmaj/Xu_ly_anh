@@ -13,7 +13,7 @@ from PIL import Image
 def creat_plot(ptype):
     # setting the x-axis values
     x = np.arange(-10, 10, 0.01)
-    y = 0
+
     # setting the y-axis values
     if ptype == 'linear':
         y = x
@@ -61,7 +61,7 @@ fig.subplots_adjust(hspace= .5, wspace= .5)
 #plt.show() # check with method1.png
 #plt.savefig('foo.png')
 #fig.savefig('methodPlottingPie.pdf')
-Image.open('Figure_1.png').show()
+#Image.open('Figure_1.png').show()
 
 
 ############################################
@@ -71,21 +71,70 @@ def create_plot(ptype):
     x = np.arange(0, 5, 0.01)
 
     # y-axis values
-    y = 0
+
     if ptype == 'sin':
         # a sine wave
-        y = np.sin(2*np.pi*x)
+        y = np.sin(2 * np.pi * x)
     elif ptype == 'exp':
         # negative exponential function
         y = np.exp(-x)
     elif ptype == 'hybrid':
-        # a damped sin wave
-        y = (np.sin(2*np.pi*x))*(np.exp(-x))
+        # a damped sine wave
+        y = (np.sin(2 * np.pi * x)) * (np.exp(-x))
     return (x, y)
-# setiing a style to use
+# setting a style to use
 plt.style.use('ggplot')
 
 # defining subplots and their positions
-plt1 = plt.subplot2grid((11, ))
+plt1 = plt.subplot2grid((11, 1), (0, 0), rowspan=3, colspan=1)
+plt2 = plt.subplot2grid((11, 1), (4, 0), rowspan=3, colspan=1)
+plt3 = plt.subplot2grid((11, 1), (8, 0), rowspan=3, colspan=1)
+
+# plotting points on each subplot
+x, y = create_plot('sin')
+plt1.plot(x, y, label='sine wave', color='b')
+x, y = create_plot('exp')
+plt2.plot(x, y, label='negative exponential', color='r')
+x, y = create_plot('hybrid')
+plt3.plot(x, y, label='damped sine wave', color='g')
+
+# show legends of each subplot
+plt1.legend()
+plt2.legend()
+plt3.legend()
+
+plt.suptitle('SUBPLOT2GRID')
+#plt.show()
+
+#######################################
+# 3-D plotting
+# Plotting points
+from mpl_toolkits.mplot3d import axes3d # This is the module required to plot on 3-D space
+from matplotlib import style
+
+# setting a custom style to use
+style.use('ggplot')
+
+# create a new figure for plotting
+fig = plt.figure()
+
+# create a new subplot on figure
+# and set projection as 3d
+ax1 = fig.add_subplot(111, projection='3d') # create a subplot on our figure and set projection argument as 3d
+
+# defining x, y, z co-ordinates
+x = np.random.random_integers(0, 10, size=20)
+y = np.random.randint(0, 10, size=20)
+z = np.random.randint(0, 10, size=20)
+
+# plotting the points on subplot
+ax1.scatter(x, y, z, c = 'm', marker = 'x', markercolor= 'r') # use .scatter() function to plot the points in XYZ plane
+
+# setting labels for the axes
+ax1.set_xlabel('x-axis')
+ax1.set_ylabel('y-axis')
+ax1.set_zlabel('z-axis')
+
+plt.show()
 
 

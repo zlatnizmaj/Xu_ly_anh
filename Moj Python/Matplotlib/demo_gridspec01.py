@@ -15,6 +15,6 @@ ax4 = plt.subplot2grid((3,3), (2, 0))
 ax5 = plt.subplot2grid((3,3), (2, 1))
 
 plt.suptitle("subplot2grid")
-make_ticklabels_invisible(plt.gcf())
+#make_ticklabels_invisible(plt.gcf())
 plt.show()
 
