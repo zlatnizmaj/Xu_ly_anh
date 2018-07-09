@@ -2,8 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49873e2-2008-48f5-a28c-1290b42b05f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/demo_gridspec01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Moj Python/Matplotlib/demo_gridspec01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py" beforeDir="false" afterPath="$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/demo_gridspec01.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/demo_gridspec01.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-Analysis.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-COLLECT.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-EXE.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-PKG.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-PKG.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-PYZ.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/out00-PYZ.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/warndemo_gridspec01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/build/demo_gridspec01/xref-demo_gridspec01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/VCRUNTIME140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/_bz2.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/_hashlib.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/_lzma.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/_socket.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/_ssl.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/demo_gridspec01.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/demo_gridspec01.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/pyexpat.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/python36.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/select.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Matplotlib/dist/demo_gridspec01/unicodedata.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/Mang 1 chieu.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/Mang 1 chieu.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-Analysis.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-COLLECT.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-EXE.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-PKG.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-PKG.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-PYZ.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/out00-PYZ.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/warnMang 1 chieu.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/build/Mang 1 chieu/xref-Mang 1 chieu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/Mang 1 chieu.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/Mang 1 chieu.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/VCRUNTIME140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/_bz2.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/_hashlib.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/_lzma.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/_socket.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/_ssl.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/pyexpat.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/python36.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/select.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Moj Python/Numpy/dist/Mang 1 chieu/unicodedata.pyd" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graphPlotting02.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graphPlotting02.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
+            <state relative-caret-position="773">
               <caret line="130" column="84" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="87" />
               <folding>
                 <element signature="e#170#201#0" expanded="true" />
@@ -35,10 +161,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="meshgrid().py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/meshgrid().py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test3Dplotting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/test3Dplotting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="306">
               <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -76,11 +214,12 @@
         <option value="$PROJECT_DIR$/Moj Python/Matplotlib/subplot2gridTest.py" />
         <option value="$PROJECT_DIR$/Moj Python/Matplotlib/test3Dplotting.py" />
         <option value="$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py" />
+        <option value="$PROJECT_DIR$/Moj Python/Matplotlib/meshgrid().py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
+    <option name="x" value="630" />
     <option name="width" value="640" />
     <option name="height" value="984" />
   </component>
@@ -149,25 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.graphPlotting02 (1)">
-    <configuration name="demo_gridspec01" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="XLA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/Matplotlib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/Matplotlib/demo_gridspec01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.meshgrid()">
     <configuration name="graphPlotting02 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="XLA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,6 +320,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:\Moj Desktop\00 MOJ DESKTOP\00 Github Repo\Xu_ly_anh\Moj Python\Matplotlib\graphPlotting02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="meshgrid()" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="XLA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/Matplotlib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/Matplotlib/meshgrid().py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,18 +381,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.graphPlotting02" />
-      <item itemvalue="Python.demo_gridspec01" />
       <item itemvalue="Python.graphPlotting02 (1)" />
       <item itemvalue="Python.subplot2gridTest" />
       <item itemvalue="Python.test3Dplotting" />
+      <item itemvalue="Python.meshgrid()" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.meshgrid()" />
         <item itemvalue="Python.graphPlotting02 (1)" />
         <item itemvalue="Python.test3Dplotting" />
         <item itemvalue="Python.graphPlotting02" />
         <item itemvalue="Python.subplot2gridTest" />
-        <item itemvalue="Python.demo_gridspec01" />
       </list>
     </recent_temporary>
   </component>
@@ -274,29 +413,56 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5801282" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3546875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31838566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3116592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32861635" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="15" selection-start-line="164" selection-start-column="15" selection-end-line="164" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/test3Dplotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="84" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="87" />
+          <folding>
+            <element signature="e#170#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/getStarted.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -341,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <element signature="e#29#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/test3Dplotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="306">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -559,10 +716,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/graphPlotting02.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
+        <state relative-caret-position="773">
           <caret line="130" column="84" selection-start-line="130" selection-start-column="69" selection-end-line="130" selection-end-column="87" />
           <folding>
             <element signature="e#170#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/Matplotlib/meshgrid().py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
