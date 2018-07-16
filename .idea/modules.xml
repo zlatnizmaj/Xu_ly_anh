@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Advanced_Algorithm/.idea/Advanced_Algorithm.iml" filepath="$PROJECT_DIR$/../Advanced_Algorithm/.idea/Advanced_Algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/XLA.iml" filepath="$PROJECT_DIR$/.idea/XLA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Xu_ly_anh.iml" filepath="$PROJECT_DIR$/.idea/Xu_ly_anh.iml" />
     </modules>
   </component>
 </project>
