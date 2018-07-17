@@ -11,6 +11,7 @@ import numpy as np
 # # Load test examples
 # X_test, y_test = get_dataset(linearly_separable.get_test_examples)
 
+
 def get_training_examples():
     X1 = np.array([[8, 7], [4, 10], [9, 7], [7, 10],
                    [9, 6], [4, 8], [10, 10]])
@@ -19,6 +20,7 @@ def get_training_examples():
                    [4, 6], [1, 3], [2, 5]])
     y2 = np.ones(len(X2)) * -1
     return X1, y1, X2, y2
+
 
 def get_test_examples():
     X1 = np.array([[2, 9], [1, 10], [1, 11], [3, 9], [11, 5],
