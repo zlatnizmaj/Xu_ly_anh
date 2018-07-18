@@ -23,7 +23,7 @@ import numpy as np
 import pylab as p
 
 # restep set to True
-print("B\n", np.linspace(2.0, 3.0, num=5, endpoint= False, retstep=True), "\n")
+print("B\n", np.linspace(2.0, 3.0, num=5, endpoint=False, retstep=True), "\n")
 
 # to evaluate sin() in long range
 # x = np.linspace(0, 2, 10)
@@ -35,9 +35,12 @@ print("B\n", np.linspace(2.0, 3.0, num=5, endpoint= False, retstep=True), "\n")
 # start = 0
 # end = 2
 # smaples to generate = 10
-x1 = np.linspace(0, 2, 10, endpoint= False)
+x1 = np.linspace(0, 10, 5, endpoint=True, retstep=True)
+x2 = np.linspace(0, 10, 5, endpoint=False, retstep=True)
+print(11/5.0)
 y1 = np.ones(10)
-
-p.plot(x1, y1, '*')
-p.xlim((-0.2, 1.8))
-p.show()
+print(x1)
+print(x2)
+# p.plot(x1, y1, '*')
+# p.xlim((-0.2, 1.8))
+# p.show()
