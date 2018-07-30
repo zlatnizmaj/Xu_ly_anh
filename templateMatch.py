@@ -1,15 +1,13 @@
 from scipy import signal, misc
-import cv2
-
-import  numpy as np
-import  matplotlib.pyplot as plt
 
 
+import numpy as np
+import matplotlib.pyplot as plt
 
 face = misc.face(gray=True) - misc.face(gray=True).mean()
-template = np.copy(face[300:365, 670:750]) # right eye
+template = np.copy(face[300:365, 670:750])  # right eye
 template -= template.mean()
-face = face + np.random.rand(*face.shape) * 50 # add noise
+face = face + np.random.rand(*face.shape) * 50  # add noise
 corr = signal.correlate2d(face, template, boundary='symm', mode='same')
 y, x = np.unravel_index(np.argmax(corr), corr.shape) # find the match
 

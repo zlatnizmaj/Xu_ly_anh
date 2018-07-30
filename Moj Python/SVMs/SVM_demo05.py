@@ -1,0 +1,13 @@
+from mpl_toolkits import mplot3d
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = plt.axes(projection='3d')
+
+zdata = 15 * np.random.random(100)
+xdata = np.sin(zdata) + 0.1 * np.random.randn(100)
+ydata = np.cos(zdata) + 0.1 * np.random.randn(100)
+ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens')
+
+plt.show()
