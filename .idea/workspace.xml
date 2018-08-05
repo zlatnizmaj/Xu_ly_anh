@@ -5,115 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dde815dc-0a3e-4e92-8ce8-a20cf2909482" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Moj Python/Pandas/pandas_demo01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/Predict_demo01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/google.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/google1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/googleMau.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Python_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock Market_Intro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/DataCollection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/DataCollectionMoj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/Sources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/TODO.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/WithDateWithoutFormat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/DataSet/WithFormatWithoutDate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/GUI/kbc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Graphs/aapl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Graphs/aapll.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Graphs/candlestick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Graphs/svm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/2. Time Variant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/3. Kernels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/4. graphs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/5. DataCollection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/VersionCheck.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/aapl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/div_proj_2 - Modified.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/div_proj_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/mycsvfile.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/myfig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/myfig1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/myfig2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/readcsv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/site/candle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/site/create a csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/site/flask for dict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/site/mycsvfile.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/site/templates/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/div_proj_2 - Modified.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/finalforever.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/infocsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/lntcsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/main_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/ongccsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/BlockDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/DBIT_Logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/Select_Company.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/car.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/comparision.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/correlation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/dht-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/infograph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/lnt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/ltgraph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/ongc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/ongcgraph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/prev.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/sbi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/sbigraph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/tata.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/tatagraph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/static/values.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/tatacsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Company_Select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Loading_INFO.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Loading_LT.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Loading_ONGC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Loading_SBI.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/Loading_TATA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/analysis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/hp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/output_INFO.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/output_LT.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/output_ONGC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/output_SBI.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/output_TATA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/templates/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/z other files/csvmaker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/z other files/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/z other files/main_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/z other files/main_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/Implementation/website/z other files/main_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/LinearRegression/LR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/LinearRegression/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/SVM/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/SVM/aapl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/SVM/stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/SVM/table.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/WithFormatWithoutDate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/aapl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/plot_svm_regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stockprediction/GOOG.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stockprediction/aapl1111.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stockprediction/google.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stockprediction/stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/Stock-Forecast-master/Stock-Forecast-master/stockprediction/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/backtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/command_prompt_result.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snap.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snapYahoo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snap_command_prompt_result.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snap_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/stock-er.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Moj Python/SVMs/SVM_demoBasic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,27 +18,28 @@
     <session id="1301841498">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="50" />
+          <entry key="Python Console" value="387" />
           <entry key="csv" value="25" />
           <entry key="dummy" value="3" />
-          <entry key="py" value="794" />
+          <entry key="py" value="1897" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="844" />
+          <entry key="Python" value="2284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -158,7 +51,7 @@
           <entry key="csv" value="12" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
-          <entry key="py" value="33" />
+          <entry key="py" value="37" />
           <entry key="txt" value="1" />
           <entry key="yml" value="2" />
         </counts>
@@ -168,7 +61,7 @@
           <entry key="Image" value="3" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="33" />
+          <entry key="Python" value="37" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -177,34 +70,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/stock-er.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snap_graph.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/Predict_demo01.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Moj Python/PCA/pca2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demo06.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demoBasic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -294,12 +198,13 @@
         <option value="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/snapYahoo.csv" />
         <option value="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/google.csv" />
         <option value="$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/Predict_demo01.py" />
+        <option value="$PROJECT_DIR$/Moj Python/PCA/pca2.py" />
+        <option value="$PROJECT_DIR$/Moj Python/SVMs/SVM_demoBasic.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="587" />
-    <option name="y" value="-12" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -328,13 +233,6 @@
               <item name="Xu_ly_anh" type="462c0819:PsiDirectoryNode" />
               <item name="Moj Python" type="462c0819:PsiDirectoryNode" />
               <item name="SVMs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xu_ly_anh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xu_ly_anh" type="462c0819:PsiDirectoryNode" />
-              <item name="Moj Python" type="462c0819:PsiDirectoryNode" />
-              <item name="SVMs" type="462c0819:PsiDirectoryNode" />
-              <item name="Predict_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Xu_ly_anh" type="b2602c69:ProjectViewProjectNode" />
@@ -384,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Predict_demo01 (1)">
+  <component name="RunManager" selected="Python.SVM_demoBasic">
     <configuration name="Xu_ly_anh" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="Xu_ly_anh" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -444,6 +342,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="SVM_demoBasic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Xu_ly_anh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/SVMs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/SVMs/SVM_demoBasic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Stock Market_Intro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Xu_ly_anh" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -465,7 +384,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pandas_demo01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pca2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Xu_ly_anh" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -473,32 +392,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/Pandas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/PCA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/Pandas/pandas_demo01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="stock-er" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Xu_ly_anh" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/SVMs/stock-er-master/stock-er.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Moj Python/PCA/pca2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -509,19 +407,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.Xu_ly_anh" />
-      <item itemvalue="Python.pandas_demo01" />
-      <item itemvalue="Python.stock-er" />
       <item itemvalue="Python.Stock Market_Intro" />
       <item itemvalue="Python.Predict_demo01" />
       <item itemvalue="Python.Predict_demo01 (1)" />
+      <item itemvalue="Python.pca2" />
+      <item itemvalue="Python.SVM_demoBasic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SVM_demoBasic" />
+        <item itemvalue="Python.pca2" />
         <item itemvalue="Python.Predict_demo01 (1)" />
         <item itemvalue="Python.Predict_demo01" />
         <item itemvalue="Python.Stock Market_Intro" />
-        <item itemvalue="Python.stock-er" />
-        <item itemvalue="Python.pandas_demo01" />
       </list>
     </recent_temporary>
   </component>
@@ -540,20 +438,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="683" y="0" width="683" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22395833" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.46666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984375" weight="0.45751634" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984375" weight="0.45637584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.31699347" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.73657715" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015625" side_tool="true" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -584,16 +482,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/plot_iris_exercise.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demo02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demo04.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
@@ -605,13 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demo06.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -849,7 +730,31 @@
     <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/Predict_demo/Predict_demo01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/PCA/pca2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demo06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Moj Python/SVMs/SVM_demoBasic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
