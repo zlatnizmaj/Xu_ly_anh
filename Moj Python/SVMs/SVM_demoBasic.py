@@ -1,3 +1,8 @@
+"""
+follow link:
+https://sadanand-singh.github.io/posts/svmpython/
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn import svm, datasets
@@ -29,13 +34,15 @@ y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
 # print(y_min, y_max)
 
 h = (x_max / x_min)/100
-print(h)
+# print(h)
 xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
-print(xx.shape)
-print(yy.shape)
-print(yy)
+
+# print(xx.shape)
+# print(yy.shape)
+# print(yy)
 
 X_plot = np.c_[xx.ravel(), yy.ravel()]
 # print(xx.ravel())
-print(yy.ravel())
-print(X_plot)
+# print(yy.ravel())  # chuyen matrix thanh vector hang
+# print('\n\n', X_plot)
+

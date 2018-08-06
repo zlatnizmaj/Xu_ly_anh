@@ -1,8 +1,7 @@
 from sklearn import datasets
 import sklearn.datasets
-from scikit import pearson_correlation
-
-
+from scikits.crab.metrics import pearson_correlation
+from sklearn.base import BaseEstimator
 from scikits.crab.models import MatrixPreferenceDataModel
 from scikits.crab.metrics import pearson_correlation
 from scikits.crab.similarities import UserSimilarity
@@ -13,4 +12,4 @@ model = MatrixPreferenceDataModel(movies.data) # Build the model
 similarity = UserSimilarity(model, pearson_correlation) # Build the similarity
 recommender = UserBasedRecommender(model, similarity, with_preference=True) # Build the User based recommender
 
-recommender.recommend(7)  # Recommend items for the user 7
+recommender.recommend(7) # Recommend items for the user 7

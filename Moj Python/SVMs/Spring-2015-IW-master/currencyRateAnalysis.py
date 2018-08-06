@@ -7,7 +7,7 @@ def getCurrencyData():
 	df = pandas.read_csv('basicCurrencyData.csv')
 
 	countries = np.delete(df.columns.values, 0)
-	print (countries)
+	print countries
 	# test = df[countries[0]]
 	# test = list(test[np.logical_not(np.isnan(test))])
 	# print test
@@ -34,5 +34,5 @@ def getCurrencyData():
 
 		countryRateChangeDict[country] = counter
 
-	print (countryRateChangeDict)
-	print (sum(countryRateChangeDict.values()))
+	print countryRateChangeDict
+	print sum(countryRateChangeDict.values())

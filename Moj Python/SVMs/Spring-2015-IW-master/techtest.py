@@ -4,7 +4,8 @@ from sklearn import preprocessing
 from sklearn import svm
 
 # read the data
-df = pandas.read_csv('techsectordatareal.csv')
+df = pandas.read_csv('techsectordatarealMoj.csv')
+
 
 # calculate price volatility array given company
 def calcPriceVolatility(numDays, priceArray):
@@ -22,6 +23,7 @@ def calcPriceVolatility(numDays, priceArray):
 		volatilityArray.append(np.mean(movingVolatilityArray))
 	return volatilityArray
 
+
 # calculate momentum array
 def calcMomentum(numDays, priceArray):
 	# now calculate momentum
@@ -35,6 +37,7 @@ def calcMomentum(numDays, priceArray):
 		movingMomentumArray.append(1 if priceArray[i] > priceArray[i-1] else -1)
 		momentumArray.append(np.mean(movingMomentumArray))
 	return momentumArray
+
 
 def makeModelAndPredict(permno): 
 	companyData = df[df['PERMNO'] == permno]
@@ -75,7 +78,7 @@ def makeModelAndPredict(permno):
 
 	# create the SVM model
 	rbf_svc = svm.SVC(kernel = 'rbf')
-	print rbf_svc.fit(X_scaled, Y_training)
+	print (rbf_svc.fit(X_scaled, Y_training))
 
 	# predict on the test data
 
@@ -101,10 +104,11 @@ def makeModelAndPredict(permno):
 		truthArray.append(1. if predictions[i] == Y_test[i] else 0.)
 
 	# print len(truthArray)
-	print sum(truthArray)
+	print (sum(truthArray))
 	# print np.array(truthArray)
 
 	return sum(truthArray)/len(truthArray)
+
 
 def main():
 	global df
@@ -116,10 +120,11 @@ def main():
 	for permno in permnoList:
 		if permno in companiesNotFull:
 			continue
-		print permno
+		print (permno)
 		predictionForGivenNumDaysDict[permno] = makeModelAndPredict(permno)
 
-	print predictionForGivenNumDaysDict
+	print (predictionForGivenNumDaysDict)
+
 
 if __name__ == '__main__':
 	main()

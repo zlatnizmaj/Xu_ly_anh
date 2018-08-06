@@ -5,7 +5,7 @@ from sklearn import svm
 from sklearn import cross_validation
 
 # read the data
-df = pandas.read_csv('techsectordatareal.csv')
+df = pandas.read_csv('techsectordatarealMoj.csv')
 daysAhead = 270
 
 # calculate price volatility array given company
@@ -143,7 +143,7 @@ def main():
 	for numDaysTuple in sortedTuples:
 		# print "%s:\t %s\n" % (numDaysTuple, predictionDict[numDaysTuple])
 		sumStats = predictionDict[numDaysTuple]
-		print("& %d & %d & %f & %f & %f & %f \\\\\n" % (numDaysTuple[0], numDaysTuple[1], sumStats['mean'], sumStats['median'], sumStats['max'], sumStats['min']))
+		print ("& %d & %d & %f & %f & %f & %f \\\\\n" % (numDaysTuple[0], numDaysTuple[1], sumStats['mean'], sumStats['median'], sumStats['max'], sumStats['min']))
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
 	main()
