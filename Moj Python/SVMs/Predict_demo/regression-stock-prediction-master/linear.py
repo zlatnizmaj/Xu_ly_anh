@@ -33,10 +33,10 @@ def predict_price(dates, prices, x):
 	return linear_mod.predict(x)[0][0], linear_mod.coef_[0][0], linear_mod.intercept_[0]
 
 get_data('goog.csv') # calling get_data method by passing the csv file to it
-print "Dates- ", dates
-print "Prices- ", prices
+print ("Dates- ", dates)
+print ("Prices- ", prices)
 
 predicted_price, coefficient, constant = predict_price(dates, prices, 29)  
-print "\nThe stock open price for 29th Feb is: $", str(predicted_price)
-print "The regression coefficient is ", str(coefficient), ", and the constant is ", str(constant)
-print "the relationship equation between dates and prices is: price = ", str(coefficient), "* date + ", str(constant)
+print ("\nThe stock open price for 29th Feb is: $", str(predicted_price))
+print ("The regression coefficient is ", str(coefficient), ", and the constant is ", str(constant))
+print ("the relationship equation between dates and prices is: price = ", str(coefficient), "* date + ", str(constant))

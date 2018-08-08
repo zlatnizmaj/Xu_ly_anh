@@ -1,0 +1,9 @@
+https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+http://beancoder.com/linear-regression-stock-prediction/
+https://medium.com/deep-math-machine-learning-ai/chapter-3-1-svm-from-scratch-in-python-86f93f853dc
+https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72
+https://maviccprp.github.io/a-support-vector-machine-in-just-a-few-lines-of-python-code/
+https://github.com/jalajthanaki/stock_price_prediction
+https://github.com/Madhu009/Deep-math-machine-learning.ai/blob/master/SVM-FromScratch.ipynb
+
+machine learning solutions
