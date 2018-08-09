@@ -2,11 +2,12 @@ import pandas
 import numpy as np
 from sklearn import preprocessing
 from sklearn import svm
-from sklearn import cross_validation
+from sklearn.model_selection import cross_validate
 
 # read the data
-df = pandas.read_csv('techsectordatarealMoj.csv')
+df = pandas.read_csv('techsectordatareal.csv')
 daysAhead = 270
+
 
 # calculate price volatility array given company
 def calcPriceVolatility(numDays, priceArray):
@@ -26,6 +27,7 @@ def calcPriceVolatility(numDays, priceArray):
 
 	return volatilityArray
 
+
 # calculate momentum array
 def calcMomentum(numDays, priceArray):
 	global daysAhead
@@ -41,6 +43,7 @@ def calcMomentum(numDays, priceArray):
 		momentumArray.append(np.mean(movingMomentumArray))
 
 	return momentumArray
+
 
 def makeModelAndPredict(permno, numDays, sectorVolatility, sectorMomentum, splitNumber):
 	global df
@@ -72,7 +75,7 @@ def makeModelAndPredict(permno, numDays, sectorVolatility, sectorMomentum, split
 	Y = []
 	for i in range(numDays, len(companyPrices) - daysAhead):
 		Y.append(1 if companyPrices[i+daysAhead] > companyPrices[i] else -1)
-	print (len(Y))
+	print(len(Y))
 
 	# fix the length of Y if necessary
 	if len(Y) > len(X):
@@ -90,19 +93,21 @@ def makeModelAndPredict(permno, numDays, sectorVolatility, sectorMomentum, split
 	rbf_svm = svm.SVC(kernel='rbf')
 	rbf_svm.fit(X_train, y_train)
 	score = rbf_svm.score(X_test, y_test)
-	print (score)
+	print(score)
 	return score
+
 
 def main():
 	global df
 
 	# find the list of companies
 	permnoList = sorted(set(list(df['PERMNO'])))
-	companiesNotFull = [12084, 13407, 14542, 93002, 15579] # companies without full dates
+	companiesNotFull = [12084, 13407, 14542, 93002, 15579]  # companies without full dates
+	# print(permnoList)
 
 	# read the tech sector data
 	ndxtdf = pandas.read_csv('ndxtdata.csv')
-	ndxtdf = ndxtdf.sort_index(by='Date', ascending=True)
+	ndxtdf = ndxtdf.sort_values(by='Date', ascending=True)
 	ndxtPrices = list(ndxtdf['Close'])
 
 	# find when 2012 starts
@@ -123,12 +128,11 @@ def main():
 			for permno in permnoList:
 				if permno in companiesNotFull:
 					continue
-				print (permno)
+				print(permno)
 				percentage = makeModelAndPredict(permno,numDayStock,ndxtVolatilityArray,ndxtMomentumArray,startOfTwelve)
 				predictionForGivenNumDaysDict[permno] = percentage
 
-
-			predictionAccuracies = predictionForGivenNumDaysDict.values()
+			predictionAccuracies = list(predictionForGivenNumDaysDict.values())
 			meanAccuracy = np.mean(predictionAccuracies)
 			maxIndex = max(predictionForGivenNumDaysDict, key=predictionForGivenNumDaysDict.get)
 			maxAccuracy = (maxIndex, predictionForGivenNumDaysDict[maxIndex])
@@ -143,7 +147,8 @@ def main():
 	for numDaysTuple in sortedTuples:
 		# print "%s:\t %s\n" % (numDaysTuple, predictionDict[numDaysTuple])
 		sumStats = predictionDict[numDaysTuple]
-		print ("& %d & %d & %f & %f & %f & %f \\\\\n" % (numDaysTuple[0], numDaysTuple[1], sumStats['mean'], sumStats['median'], sumStats['max'], sumStats['min']))
+		print("& %d & %d & %f & %f & %f & %f \\\\\n" % (numDaysTuple[0], numDaysTuple[1], sumStats['mean'], sumStats['median'], sumStats['max'], sumStats['min']))
+
 
 if __name__ == "__main__":
 	main()

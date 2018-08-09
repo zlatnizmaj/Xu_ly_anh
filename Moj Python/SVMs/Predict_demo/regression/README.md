@@ -1,0 +1,2 @@
+# Mô hình hồi quy ứng dụng trong bài toán dự đoán giá bất động sản - Machine Learning (phần 2)
+https://viblo.asia/p/mo-hinh-hoi-quy-ung-dung-trong-bai-toan-du-doan-gia-bat-dong-san-machine-learning-phan-2-xQMkJLrzGam

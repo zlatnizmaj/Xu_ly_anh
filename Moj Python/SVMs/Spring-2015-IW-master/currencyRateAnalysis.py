@@ -34,5 +34,5 @@ def getCurrencyData():
 
 		countryRateChangeDict[country] = counter
 
-	print countryRateChangeDict
-	print sum(countryRateChangeDict.values())
+	print(countryRateChangeDict)
+	print(sum(countryRateChangeDict.values()))

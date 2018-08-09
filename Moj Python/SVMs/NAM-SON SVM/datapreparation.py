@@ -36,7 +36,7 @@ idx = pd.date_range('07-31-2008', '07-31-2018')
 df1.index = pd.DatetimeIndex(df1.index)
 df1 = df1.reindex(idx, fill_value=np.NaN)
 print(df1.head())
-df1.to_csv('df1.csv')
+# df1.to_csv('df1.csv')
 # Reference for pandas interpolation http://pandas.pydata.org/pandas-docs/stable/missing_data.html
 
 interpolated_df = df1.interpolate()
@@ -69,14 +69,21 @@ test_start_date = '2017-08-01'
 test_end_date = '2018-07-31'
 train = df.loc[train_start_date: train_end_date]
 test = df.loc[test_start_date:test_end_date]
-
+print(train)
 # Split prediction labels for training and testing dataset
 y_train = pd.DataFrame(train['prices'])
 y_test = pd.DataFrame(test['prices'])
 
+# sentiment_score_list = []
+# for date, row in train.T.iteritems():
+#     sentiment_score = np.asarray([df.loc[date, 'neg'], df.loc[date, 'pos']])
+#     sentiment_score_list.append(sentiment_score)
+# numpy_df_train = np.asarray(sentiment_score_list)
+
+# print(df_stocks.index)
 # SVM, SVR
-svr_rbf = SVR(kernel='rbf', C=1e3, gamma=0.1)
-svr_rbf.fit(y_train)
-print(svr_rbf.feature_importances_ )
-idx = pd.date_range(test_start_date, test_end_date)
-predictions_df = pd.DataFrame(data=prediction[0:], index = idx, columns=['prices'])
+# svr_rbf = SVR(kernel='rbf', C=1e3, gamma=0.1)
+# svr_rbf.fit(df_stocks.index, y_train)
+# print(svr_rbf.feature_importances_ )
+# idx = pd.date_range(test_start_date, test_end_date)
+# predictions_df = pd.DataFrame(data=prediction[0:], index = idx, columns=['prices'])

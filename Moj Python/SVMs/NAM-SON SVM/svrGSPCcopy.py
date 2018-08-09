@@ -2,6 +2,7 @@ import csv
 import numpy as np
 from sklearn.svm import SVR
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 dates = []
 prices = []
@@ -12,8 +13,14 @@ def get_data(filename):
 		csvFileReader = csv.reader(csvfile)
 		next(csvFileReader)	# skipping column names
 		for row in csvFileReader:
-			dates.append(int(row[0].split('-')[0]))
+			date = row[0].split('-')
+			date[:] = [''.join(date[:])]
+			dates.append(date)
 			prices.append(float(row[1]))
+		# for date in dates:
+		# 	date = np.array(date).astype('int64')
+		# 	print(date)
+		# 	int('-'.join(c for c in date if c.isdigit()))
 	return
 
 
@@ -40,12 +47,12 @@ def predict_price(dates, prices, x):
 	return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
 
-get_data('goog.csv')  # calling get_data method by passing the csv file to it
+get_data('GSPCcopy.csv')  # calling get_data method by passing the csv file to it
 print("Dates- ", dates)
 print("Prices- ", prices)
 
-predicted_price = predict_price(dates, prices, 29)  
-print("\nThe stock open price for 29th Feb is:")
-print("RBF kernel: $", str(predicted_price[0]))
-print("Linear kernel: $", str(predicted_price[1]))
-print("Polynomial kernel: $", str(predicted_price[2]))
+# predicted_price = predict_price(dates, prices, 29)
+# print("\nThe stock open price for 29th Feb is:")
+# print("RBF kernel: $", str(predicted_price[0]))
+# print("Linear kernel: $", str(predicted_price[1]))
+# print("Polynomial kernel: $", str(predicted_price[2]))

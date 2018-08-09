@@ -16,10 +16,10 @@ permnoList = sorted(list(set(df['PERMNO'])))
 # skip certain companies b/c their price data is not full
 #permnoToSkip = [10942, 11896]
 #permnoList = [x for x in permnoList if x not in permnoToSkip]
-print permnoList
+print (permnoList)
 companyChanges = {}
 #permnoList.pop(0)    #remove nan at the beginning
-print len(permnoList)
+print (len(permnoList))
 
 f = open('pythonlist.txt', 'w+')
 
@@ -38,18 +38,18 @@ for i in range(len(permnoList)):
 	marketShare = abs(list(compData['PRC'])[-5]) * abs(list(compData['SHROUT'])[-5])
 	# print list(compData['PRC'])[-1]
 	#f.write('%s:%f\n' % (permnoList[i], marketShare))
-	print '%s: %f' % (permnoList[i], marketShare)
+	print('%s: %f' % (permnoList[i], marketShare))
 	marketCapArray.append(marketShare)
 	marketCapDict[permnoList[i]] = [marketShare]
 
 # print marketCapArray
 for i in range(1,11):
-	print "%d percentile: %f" % (i*10, numpy.percentile(marketCapArray, i*10))
+	print ("%d percentile: %f" % (i*10, numpy.percentile(marketCapArray, i*10)))
 
 for permno in permnoList:
 	marketCap = marketCapDict[permno][0]
 	percentile = findPercentile(marketCap, marketCapArray)
-	print '%s: %f\tpercentile:%d' % (permno, marketCap, percentile)
+	print ('%s: %f\tpercentile:%d' % (permno, marketCap, percentile))
 	marketCapDict[permno].append(percentile)
 
 alpha = 0.15  # percent change needed to be significant
@@ -126,22 +126,22 @@ for permno in permnoList:
     stdDev = meanAndStdDev[1]
     #mean = findMean(permno)
     # stdDev = findStdDev((permno))
-    print "%s: %d\t%d changes\t %f mean\t %f std" % (permno, percentile, numChanges, mean, stdDev)
+    print("%s: %d\t%d changes\t %f mean\t %f std" % (permno, percentile, numChanges, mean, stdDev))
     percentileChangesArray[percentile-1] += numChanges
     standardDeviationArray[percentile-1].append(stdDev)
     meanReturnArray[percentile-1].append(mean)
 
-print percentileChangesArray
-print sum(percentileChangesArray)
+print(percentileChangesArray)
+print(sum(percentileChangesArray))
 
 for i in range(10):
 	standardDeviationArray[i] = numpy.mean(standardDeviationArray[i])
 	meanReturnArray[i] = numpy.mean(meanReturnArray[i])
 
-print "standardDeviationArray"
-print standardDeviationArray
-print "meanReturnArray"
-print meanReturnArray
+print("standardDeviationArray")
+print(standardDeviationArray)
+print("meanReturnArray")
+print(meanReturnArray)
 
 
 # countryRateChangeDict = {}
@@ -193,8 +193,8 @@ plt.figure(1)
 # decileArray.append("FX rates")
 x_pos = numpy.arange(len(decileArray))
 
-print len(x_pos)
-print len(percentileChangesArray)
+print(len(x_pos))
+print(len(percentileChangesArray))
 
 plt.bar(x_pos, percentileChangesArray)
 plt.xticks(x_pos, decileArray)
