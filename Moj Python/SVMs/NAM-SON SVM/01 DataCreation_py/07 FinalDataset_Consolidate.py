@@ -134,10 +134,10 @@ xl = pd.DataFrame({'Close': Close, 'Change': Change, 'Stock_Volatility': Stock_V
                    'Index_Momentum': Index_Momentum, 'Sector_Momentum': Sector_Momentum})
 xl.to_csv("../dataset/Input_Dataset.csv", index=False, header=False)
 
-SVM_input = pd.DataFrame({'Close': Close, 'Index_Momentum': Index_Momentum, 'Index_Volatility': Index_Volatility,
-                          'Sector_Momentum': Sector_Momentum,
-                          'Stock_Momentum': Stock_Momentum, 'Stock_Volatility': Stock_Volatility})
-
-SVM_target = pd.DataFrame({'Change': Change})
-
-SVM_input.to_csv("../dataset_modified/SVM_Input.csv", index=False, header=True)
+# SVM_input = pd.DataFrame({'Close': Close, 'Index_Momentum': Index_Momentum, 'Index_Volatility': Index_Volatility,
+#                           'Sector_Momentum': Sector_Momentum,
+#                           'Stock_Momentum': Stock_Momentum, 'Stock_Volatility': Stock_Volatility})
+#
+# SVM_target = pd.DataFrame({'Change': Change})
+#
+# SVM_input.to_csv("../dataset_modified/SVM_Input.csv", index=False, header=True)

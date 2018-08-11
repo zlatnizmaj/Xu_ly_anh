@@ -19,8 +19,8 @@ def Read_file(file_name):
 start_time = time.time()
 
 # testdataset
-testdataset = Read_file('./dataset/SVM_Input.csv')
-test_target = Read_file('./dataset/SVM_Target.csv')
+testdataset = Read_file('SVM_Input.csv')
+test_target = Read_file('SVM_Target.csv')
 
 n_epoch = 2
 w = 0
