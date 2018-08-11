@@ -44,7 +44,7 @@ get_data('goog.csv')  # calling get_data method by passing the csv file to it
 print("Dates- ", dates)
 print("Prices- ", prices)
 
-predicted_price = predict_price(dates, prices, 29)  
+predicted_price = predict_price(dates, prices, 9)
 print("\nThe stock open price for 29th Feb is:")
 print("RBF kernel: $", str(predicted_price[0]))
 print("Linear kernel: $", str(predicted_price[1]))
