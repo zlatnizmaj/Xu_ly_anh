@@ -1,12 +1,12 @@
 import pandas as pd
 
-file1 = "../dataset_modified/Apple_Modified.csv"
-file2 = "../dataset_modified/Amazon_Modified.csv"
-file3 = "../dataset_modified/Intel_Modified.csv"
-file4 = "../dataset_modified/Microsoft_Modified.csv"
-file5 = "../dataset_modified/Google_Modified.csv"
+file1 = "../dataset_modified_Input/Apple_modified.csv"
+file2 = "../dataset_modified_Input/Amazon_modified.csv"
+file3 = "../dataset_modified_Input/Intel_modified.csv"
+file4 = "../dataset_modified_Input/Microsoft_modified.csv"
+file5 = "../dataset_modified_Input/Google_modified.csv"
 
-fileIndex = "../dataset_modified/NASDAQ_Modified.csv"
+fileIndex = "../dataset_modified_Input/NASDAQ_modified.csv"
 
 xl1 = pd.read_csv(file1)  # xl1: Apple stock
 date_1 = xl1['Date']
@@ -132,7 +132,7 @@ for i in range(5, 1261):
 xl = pd.DataFrame({'Close': Close, 'Change': Change, 'Stock_Volatility': Stock_Volatility,
                    'Stock_Momentum': Stock_Momentum, 'Index_Volatility': Index_Volatility,
                    'Index_Momentum': Index_Momentum, 'Sector_Momentum': Sector_Momentum})
-xl.to_csv("../dataset/Input_Dataset.csv", index=False, header=False)
+xl.to_csv("../dataset_original/Input_dataset.csv", index=False, header=False)
 
 # SVM_input = pd.DataFrame({'Close': Close, 'Index_Momentum': Index_Momentum, 'Index_Volatility': Index_Volatility,
 #                           'Sector_Momentum': Sector_Momentum,
@@ -140,4 +140,4 @@ xl.to_csv("../dataset/Input_Dataset.csv", index=False, header=False)
 #
 # SVM_target = pd.DataFrame({'Change': Change})
 #
-# SVM_input.to_csv("../dataset_modified/SVM_Input.csv", index=False, header=True)
+# SVM_input.to_csv("../dataset_modified_Input/SVM_Input.csv", index=False, header=True)

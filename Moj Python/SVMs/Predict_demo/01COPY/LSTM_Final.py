@@ -33,7 +33,7 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
 		agg.dropna(inplace=True)
 	return agg
 
-# load dataset
+# load dataset_original
 dataset = read_csv('Input_Dataset_LSTM.csv', header=0,)
 values = dataset.values
 

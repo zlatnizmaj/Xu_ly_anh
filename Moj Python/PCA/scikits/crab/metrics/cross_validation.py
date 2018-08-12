@@ -155,7 +155,7 @@ class KFold(object):
     """K-Folds cross validation iterator
 
     Provides train/test indices to split user preferences in train test sets.
-    Split dataset into k consecutive folds (without shuffling).
+    Split dataset_original into k consecutive folds (without shuffling).
 
     Each fold is then used a validation set once while the k - 1 remaining
     fold form the training set.
@@ -245,14 +245,14 @@ class ShuffleSplit(object):
     Parameters
     ----------
     n : int
-        Total number of elements in the dataset.
+        Total number of elements in the dataset_original.
 
     n_iterations : int (default 10)
         Number of re-shuffling & splitting iterations.
 
     test_fraction : float (default 0.1)
         Should be between 0.0 and 1.0 and represent the proportion of
-        the dataset to include in the test split.
+        the dataset_original to include in the test split.
 
     indices : boolean, optional (default False)
         Return train/test split with integer indices or boolean mask.

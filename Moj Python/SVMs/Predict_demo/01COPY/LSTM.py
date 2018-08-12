@@ -11,7 +11,7 @@ from numpy import newaxis
 
 
 
-prices_dataset =  pd.read_csv('Input_Dataset.csv', header=0)
+prices_dataset =  pd.read_csv('Input_dataset.csv', header=0)
 print(prices_dataset.values)
 # Apple_stock_prices = prices_dataset.values.astype('float32')
 # Apple_stock_prices = Apple_stock_p rices.reshape(110684, 1)

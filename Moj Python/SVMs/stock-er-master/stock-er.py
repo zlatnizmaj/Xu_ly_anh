@@ -14,7 +14,7 @@
 # pip install scikit-learn - build a predictive model
 # pip install matplotlib - plot datapoints on the model to analyze
 
-# Step 2: Collecting dataset (Apple stocks from the past 30 days)
+# Step 2: Collecting dataset_original (Apple stocks from the past 30 days)
 # Go to finance.google.com
 # Look up NYSE:SNAP
 # Select "Historical prices"
@@ -66,7 +66,7 @@ def predict_price(dates, prices, x):
 	accordingly with the label. However, in this program we are not predicting a class label, so we don't
 	need to classify instead we are predicting the next value in a series which means we want to use regression.
 	SVM's can be used for regression as well. The support vector regression is a type of SVM that uses the space between
-	data points as a margin of error and predicts the most likely next point in a dataset.
+	data points as a margin of error and predicts the most likely next point in a dataset_original.
 
 	The predict_prices returns predictions from each of our models
 	

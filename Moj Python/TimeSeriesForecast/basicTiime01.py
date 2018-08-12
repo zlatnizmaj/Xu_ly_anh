@@ -5,8 +5,8 @@ import statsmodels.api as sm
 
 '''
 Conveniently, statsmodels comes with built-in datasets, 
-so we can load a time-series dataset straight into memory
-dataset called "Atmospheric CO2 from Continuous Air Samples 
+so we can load a time-series dataset_original straight into memory
+dataset_original called "Atmospheric CO2 from Continuous Air Samples 
 at Mauna Loa Observatory, Hawaii, U.S.A.,"
 '''
 data = sm.datasets.co2.load_pandas()

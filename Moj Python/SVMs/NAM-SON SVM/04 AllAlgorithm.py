@@ -39,10 +39,10 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 
-# Load dataset
+# Load dataset_original
 #url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-# dataset = pandas.read_csv(url, names=names)
+# dataset_original = pandas.read_csv(url, names=names)
 
 dataset = pandas.read_csv('C:\\Users\\Dell\\.spyder-py3\\Iris.txt', names=names)
 
@@ -72,7 +72,7 @@ dataset.hist()
 # scatter plot matrix
 scatter_matrix(dataset)
 
-# Split-out validation dataset
+# Split-out validation dataset_original
 array = dataset.values
 X = array[:,0:4]
 Y = array[:,4]

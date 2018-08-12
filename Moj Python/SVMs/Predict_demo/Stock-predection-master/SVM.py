@@ -16,13 +16,13 @@ def Read_file(file_name):
     return dataset
 
 
-# Convert string columns to float in input dataset
+# Convert string columns to float in input dataset_original
 def str_column_to_float(dataset, column):
     for row in dataset:
         row[column] = float(row[column].strip())
 
 
-# Convert string column to integer in input dataset (last column with class value)
+# Convert string column to integer in input dataset_original (last column with class value)
 def str_column_to_int(dataset, column):
     class_values = [row[column] for row in dataset]
     unique = set(class_values)
@@ -40,7 +40,7 @@ def dataset_minmax(dataset):
     return stats
 
 
-# Rescale dataset columns to the range 0-1
+# Rescale dataset_original columns to the range 0-1
 def normalize_dataset(dataset, minmax):
     for row in dataset:
         for i in range(len(row) - 1):

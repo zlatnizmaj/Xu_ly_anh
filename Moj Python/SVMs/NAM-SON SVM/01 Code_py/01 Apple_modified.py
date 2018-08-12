@@ -1,6 +1,6 @@
 import pandas as pd
-# path_files_CSV = "./dataset"
-file = "../dataset/GOOG.csv"
+path_files_CSV = "./dataset_original"
+file = "../dataset_original/AAPL.CSV"
 
 xl = pd.read_csv(file)
 date = xl['Date']
@@ -22,6 +22,5 @@ for i in range(1, len(date)):
         Momentum[i] = "0"
         Change[i] = (Close[i-1] - Close[i]) / Close[i - 1]
 
-xl = pd.DataFrame({'Date': date, 'Close': Close, 'Change': Change, 'Momentum': Momentum})  # a represents closing date b represents closing value c represents close change and d represents momentum
-
-xl.to_csv("../dataset_modified/Google_Modified.csv", index=False, header=True)
+xl = pd.DataFrame({'Change': Change, 'Close': Close, 'Date': date, 'Momentum': Momentum})
+xl.to_csv("../dataset_modified_Input/Apple_modified.csv", index=False, header=True)

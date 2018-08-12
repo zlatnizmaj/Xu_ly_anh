@@ -24,4 +24,4 @@ for i in range (1,len(date)):
 
 xl = pd.DataFrame({'Date':date, 'Close':Close,'Change':Change,'Momentum':Momentum}) # a represents closing date b represents closing value c represents close change and d represents momentum
 
-xl.to_csv("Apple_Modified.csv",index=False,header=True)
+xl.to_csv("Apple_modified.csv",index=False,header=True)

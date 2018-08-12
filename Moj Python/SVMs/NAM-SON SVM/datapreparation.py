@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.svm import SVR
 from sklearn.metrics import classification_report,confusion_matrix
 import matplotlib.pyplot as plt
-# Prepare DJIA training dataset
+# Prepare DJIA training dataset_original
 
 # Reading DJIA index prices csv file
 with open('GSPC.csv', 'r') as csvfile:
@@ -25,7 +25,7 @@ df = pd.DataFrame(data=selected_data[0:, 1:],
                   dtype='float64')
 print(df.head())
 
-# Basic Data analysis for DJIA dataset
+# Basic Data analysis for DJIA dataset_original
 # copy the data to the new dataframe df1 which is temporary dataframe
 df1 = df
 
@@ -49,7 +49,7 @@ print(interpolated_df.head())
 # Save pandas frame in csv form
 interpolated_df.to_csv('GSPC_interpolated_df_10_years.csv')
 
-# Load dataset
+# Load dataset_original
 df_stocks = pd.read_csv('GSPC_interpolated_df_10_years.csv')
 
 # Convert adj close price into integer format
@@ -70,7 +70,7 @@ test_end_date = '2018-07-31'
 train = df.loc[train_start_date: train_end_date]
 test = df.loc[test_start_date:test_end_date]
 print(train)
-# Split prediction labels for training and testing dataset
+# Split prediction labels for training and testing dataset_original
 y_train = pd.DataFrame(train['prices'])
 y_test = pd.DataFrame(test['prices'])
 

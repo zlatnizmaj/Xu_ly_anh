@@ -61,7 +61,7 @@ def main(dir_path, output_dir):
 
             finance.columns = [str(col.replace('&', '_and_')) for col in finance.columns]
 
-            #Move the Open Values behind by one dataset.
+            #Move the Open Values behind by one dataset_original.
             finance.open = finance.open.shift(-1)
 
             print(high_value)

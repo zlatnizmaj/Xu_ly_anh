@@ -1,6 +1,6 @@
 import pandas as pd
-# path_files_CSV = "./dataset"
-file = "../dataset/INTC.csv"
+
+file = "../dataset/NDAQ.csv"  # input: NDAQ.csv
 
 xl = pd.read_csv(file)
 date = xl['Date']
@@ -24,4 +24,4 @@ for i in range(1, len(date)):
 
 xl = pd.DataFrame({'Date': date, 'Close': Close, 'Change': Change, 'Momentum': Momentum})  # a represents closing date b represents closing value c represents close change and d represents momentum
 
-xl.to_csv("../dataset_modified/Intel_Modified.csv", index=False, header=True)
+xl.to_csv("../dataset_modified_Input/NASDAQ_modified.csv", index=False, header=True) # Ouput: NASDAQ_modified.csv

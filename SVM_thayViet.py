@@ -9,7 +9,7 @@ from sklearn import svm, datasets
 # import some data to play with
 iris = datasets.load_iris()
 X = iris.data[:, :2]  # we only take the first two features. We could
-# avoid this ugly slicing by using a two-dim dataset
+# avoid this ugly slicing by using a two-dim dataset_original
 y = iris.target
 
 h = .02  # step size in the mesh

@@ -23,7 +23,7 @@ class Bunch(dict):
 
 
 def load_movielens_r100k(load_timestamp=False):
-    """ Load and return the MovieLens dataset with
+    """ Load and return the MovieLens dataset_original with
         100,000 ratings (only the user ids, item ids, timestamps
         and ratings).
 
@@ -43,7 +43,7 @@ def load_movielens_r100k(load_timestamp=False):
             {user_id: label, user_id2: label2, ...} and
         'item_ids': the item labels with respective ids in the shape:
             {item_id: label, item_id2: label2, ...} and
-        DESCR, the full description of the dataset.
+        DESCR, the full description of the dataset_original.
 
     Examples
     --------
@@ -91,7 +91,7 @@ def load_movielens_r100k(load_timestamp=False):
 
 
 def load_sample_songs():
-    """ Load and return the songs dataset with
+    """ Load and return the songs dataset_original with
          49 ratings (only the user ids, item ids and ratings).
 
     Return
@@ -105,7 +105,7 @@ def load_sample_songs():
             {user_id: label, user_id2: label2, ...} and
         'item_ids': the item labels with respective ids in the shape:
             {item_id: label, item_id2: label2, ...} and
-        DESCR, the full description of the dataset.
+        DESCR, the full description of the dataset_original.
 
     Examples
     --------
@@ -154,7 +154,7 @@ def load_sample_songs():
 
 
 def load_sample_movies():
-    """ Load and return the movies dataset with
+    """ Load and return the movies dataset_original with
          n ratings (only the user ids, item ids and ratings).
 
     Return
@@ -168,7 +168,7 @@ def load_sample_movies():
             {user_id: label, user_id2: label2, ...} and
         'item_ids': the item labels with respective ids in the shape:
             {item_id: label, item_id2: label2, ...} and
-        DESCR, the full description of the dataset.
+        DESCR, the full description of the dataset_original.
 
     Examples
     --------

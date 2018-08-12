@@ -68,7 +68,7 @@ class MatrixPreferenceDataModel(BaseDataModel):
     'Superman Returns':4.0}, \
     'Maria Gabriela': {}}
     >>> model = MatrixPreferenceDataModel(movies)
-    >>> #non-empty dataset
+    >>> dataset_original
     >>> model.user_ids()
     array(['Leopoldo Pires', 'Lorena Abreu', 'Marcel Caraciolo',
                'Maria Gabriela', 'Paola Pow', 'Penny Frewman', 'Sheldom',

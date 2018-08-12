@@ -50,8 +50,8 @@ def normalize_dataset(dataset, minmax):
 
 
 # testdataset
-testdataset= Read_file('Input_Dataset.csv')
-# dataset = Read_file('Input_Dataset.csv')
+testdataset= Read_file('Input_dataset.csv')
+# dataset = Read_file('Input_dataset.csv')
 # x = int(2*len(dataset)/3)
 # traindataset = dataset[0:x]
 # testdataset = dataset[x:len(dataset)]

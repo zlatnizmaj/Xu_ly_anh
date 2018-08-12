@@ -58,7 +58,7 @@ class RecommenderEvaluator(object):
 
     def evaluate_on_split(self, metrics=None, **kwargs):
         """
-        Evaluate on the folds of a dataset split
+        Evaluate on the folds of a dataset_original split
 
         Parameters
         ----------

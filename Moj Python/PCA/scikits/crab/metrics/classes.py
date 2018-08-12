@@ -47,7 +47,7 @@ def check_sampling(sampling, n):
     sampling: a float, a sampling generator instance, or None
         The input specifying which sampling generator to use.
         It can be an float, in which case it is the the proportion of
-        the dataset to include in the training set in SplitSampling.
+        the dataset_original to include in the training set in SplitSampling.
         None, in which case all the elements are used,
         or another object, that will then be used as a cv generator.
 
@@ -140,14 +140,14 @@ class CfEvaluator(RecommenderEvaluator):
 
     def _build_recommender(self, dataset, recommender):
         """
-        Build a clone recommender with the given dataset
+        Build a clone recommender with the given dataset_original
         as the training set.
 
         Parameters
         ----------
 
         dataset: dict
-            The dataset with the user's preferences.
+            The dataset_original with the user's preferences.
 
         recommender: A scikits.crab.base.BaseRecommender object.
             The given recommender to be cloned.
@@ -362,7 +362,7 @@ class CfEvaluator(RecommenderEvaluator):
 
     def evaluate_on_split(self, recommender, metric=None, cv=None, **kwargs):
         """
-        Evaluate on the folds of a dataset split
+        Evaluate on the folds of a dataset_original split
 
         Parameters
         ----------
