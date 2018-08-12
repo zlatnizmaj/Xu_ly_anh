@@ -108,6 +108,9 @@ results = []
 names = []
 for name, model in models:
     kfold = model_selection.KFold(n_splits=10, random_state=seed)
+    print(kfold)
+    # for train, test in kfold.split(X_train):
+    #     print('train: %s, test: %s' % (train, test))
     cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
     results.append(cv_results)
     names.append(name)
@@ -125,48 +128,48 @@ print(classification_report(y_validation, predictions))
 
 
 # confusion matrix
-def plot_confusion_matrix(cm, classes,
-                          normalize=False,
-                          title='Confusion matrix',
-                          cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
-    if normalize:
-        cm = cm.astype('float') / cm.sum(axis=1, keepdims = True)
+# def plot_confusion_matrix(cm, classes,
+#                           normalize=False,
+#                           title='Confusion matrix',
+#                           cmap=plt.cm.Blues):
+#     """
+#     This function prints and plots the confusion matrix.
+#     Normalization can be applied by setting `normalize=True`.
+#     """
+#     if normalize:
+#         cm = cm.astype('float') / cm.sum(axis=1, keepdims = True)
+#
+#     plt.imshow(cm, interpolation='nearest', cmap=cmap)
+#     plt.title(title)
+#     plt.colorbar()
+#     tick_marks = np.arange(len(classes))
+#     plt.xticks(tick_marks, classes, rotation=45)
+#     plt.yticks(tick_marks, classes)
+#
+#     fmt = '.2f' if normalize else 'd'
+#     thresh = cm.max() / 2.
+#     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+#         plt.text(j, i, format(cm[i, j], fmt),
+#                  horizontalalignment="center",
+#                  color="red" if cm[i, j] > thresh else "black")
+#     plt.tight_layout()
+#     plt.ylabel('True label')
+#     plt.xlabel('Predicted label')
+# # Plot non-normalized confusion matrix
+#
+#
+# cnf_matrix = confusion_matrix(y_validation, predictions)
+# class_names = [0, 1]
+# plt.figure()
+# plot_confusion_matrix(cnf_matrix, classes=class_names,
+#                       title='Confusion matrix, without normalization')
+#
+# # Plot normalized confusion matrix
+# plt.figure()
+# plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
+#                       title='Normalized confusion matrix')
 
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
-    tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
-
-    fmt = '.2f' if normalize else 'd'
-    thresh = cm.max() / 2.
-    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, format(cm[i, j], fmt),
-                 horizontalalignment="center",
-                 color="red" if cm[i, j] > thresh else "black")
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
-# Plot non-normalized confusion matrix
-
-
-cnf_matrix = confusion_matrix(y_validation, predictions)
-class_names = [0, 1]
-plt.figure()
-plot_confusion_matrix(cnf_matrix, classes=class_names,
-                      title='Confusion matrix, without normalization')
-
-# Plot normalized confusion matrix
-plt.figure()
-plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
-                      title='Normalized confusion matrix')
-
-plt.show()
+# plt.show()
 
 
 # print(X_validation,Y_validation), lưu ra model, mỗi lần change
