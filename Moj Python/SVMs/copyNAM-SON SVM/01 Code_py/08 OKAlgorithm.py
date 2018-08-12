@@ -29,6 +29,7 @@ import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
 
 import time
+import itertools
 import numpy as np
 import pandas as pd
 from pandas.plotting import scatter_matrix
@@ -40,52 +41,55 @@ from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC  # build lại giải thuật
 
 path_files_CSV = "../dataset_modified_Input/"
-names = ['Close', 'Index_Momentum', 'Index_Volatility',
-         'Sector_Momentum',
-         'Stock_Momentum', 'Stock_Volatility']
+# names = ['Close', 'Index_Momentum', 'Index_Volatility',
+#          'Sector_Momentum',
+#          'Stock_Momentum', 'Stock_Volatility']
 
 start_time = time.time()
 # Load dataset
 # url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 # names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 # dataset = pandas.read_csv(url, names=names)
-# dataset = pandas.read_csv('Iris.txt', names=names)
 
-dataset_input = pd.read_csv(path_files_CSV + 'SVM_input.csv', names=names)
-dataset_target = pd.read_csv(path_files_CSV + 'SVM_target.csv', header=None)
+dataset = pandas.read_csv(path_files_CSV + 'Input_dataset.csv')
+
+# dataset_input = pd.read_csv(path_files_CSV + 'SVM_input.csv', header=None)
+# dataset_target = pd.read_csv(path_files_CSV + 'SVM_target.csv', header=None)
 
 # shape
-print(dataset_input.shape)
+print(dataset.shape)
 
 # head
-print(dataset_input.head())
+print(dataset.head())
 
 # descriptions
-print(dataset_input.describe())
+print(dataset.describe())
 
 # class distribution
 # print(dataset_input.groupby('class').size())
 
 # box and whisker plots
-# dataset_input.plot(kind='box', subplots=True, layout=(2, 2), sharex=False, sharey=False)
-# plt.show()
+# dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False)
+plt.show()
 
 
 # histograms
-dataset_input.hist()
+# dataset.hist()
 plt.show()
 
 # scatter plot matrix
-scatter_matrix(dataset_input)
+scatter_matrix(dataset)
 
 # Split-out validation dataset
-svm_input = dataset_input.values
-svm_target = dataset_target.values
-# X = array[:, 0:4]
-# Y = array[:, 4]
+array = dataset.values
+X_input = array[:, 0:6]
+y_target = array[:, 6]
+print(X_input[0])
 validation_size = 0.25
 seed = 7
-X_train, X_validation, y_train, y_validation = model_selection.train_test_split(svm_input, svm_target.ravel(), test_size=validation_size, random_state=seed)
+X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
+                                                                                test_size=validation_size,
+                                                                                random_state=seed)
 
 # Spot Check Algorithms
 models = []
@@ -114,10 +118,56 @@ model = SVC()
 SVM = SVC(kernel="rbf", decision_function_shape='ovo')
 SVM.fit(X_train, y_train)
 predictions = SVM.predict(X_validation)
-# print(X_validation, y_validation)
+print(y_validation, predictions)
 print('accuracy:\n', accuracy_score(y_validation, predictions))
 print('confusion_matrix:\n', confusion_matrix(y_validation, predictions))
 print(classification_report(y_validation, predictions))
+
+
+# confusion matrix
+def plot_confusion_matrix(cm, classes,
+                          normalize=False,
+                          title='Confusion matrix',
+                          cmap=plt.cm.Blues):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1, keepdims = True)
+
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar()
+    tick_marks = np.arange(len(classes))
+    plt.xticks(tick_marks, classes, rotation=45)
+    plt.yticks(tick_marks, classes)
+
+    fmt = '.2f' if normalize else 'd'
+    thresh = cm.max() / 2.
+    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+        plt.text(j, i, format(cm[i, j], fmt),
+                 horizontalalignment="center",
+                 color="red" if cm[i, j] > thresh else "black")
+    plt.tight_layout()
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+# Plot non-normalized confusion matrix
+
+
+cnf_matrix = confusion_matrix(y_validation, predictions)
+class_names = [0, 1]
+plt.figure()
+plot_confusion_matrix(cnf_matrix, classes=class_names,
+                      title='Confusion matrix, without normalization')
+
+# Plot normalized confusion matrix
+plt.figure()
+plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
+                      title='Normalized confusion matrix')
+
+plt.show()
+
 
 # print(X_validation,Y_validation), lưu ra model, mỗi lần change
 # from pickle import dump
