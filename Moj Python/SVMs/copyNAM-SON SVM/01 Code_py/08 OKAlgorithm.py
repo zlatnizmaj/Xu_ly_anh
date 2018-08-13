@@ -166,13 +166,15 @@ plt.show()
 
 # tuned_parameters = [{'C': [0.01, 0.1, 1, 10, 100],
 #                      'gamma': [0.5, 1, 2, 3, 4]}]
-# clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
-# clf.fit(X_train, y_train)
-#
+tuned_parameters = [{'C': [0.1, 1, 10, 100],
+                     'gamma': [0.5, 1, 10]}]
+clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
+clf.fit(X_train, y_train)
+
 # print(clf.cv_results_)
-# print(clf.best_params_)
-# print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
-# print(clf.best_estimator_.score(X_validation, y_validation))
+print(clf.best_params_)
+print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
+print(clf.best_estimator_.score(X_validation, y_validation))
 
 
 # print(X_validation,Y_validation), lưu ra model, mỗi lần change
