@@ -77,7 +77,7 @@ for i in range(5, 1261):
     fileIndex_close = (Change_Index[i]+Change_Index[i-1]+Change_Index[i-2]+Change_Index[i-3]+Change_Index[i-4])/5
     fileIndex_Stock_Momentum = (Momentum_Index[i] + Momentum_Index[i - 1] + Momentum_Index[i - 2] + Momentum_Index[i - 3] + Momentum_Index[i - 4]) / numberOfDate
 
-    # stock momentum for given day
+    # sector momentum for given day
     Sector_momentum = (file1_Stock_Momentum + file2_Stock_Momentum + file3_Stock_Momentum + file4_Stock_Momentum
                        + file5_Stock_Momentum + fileIndex_Stock_Momentum)/5
 
