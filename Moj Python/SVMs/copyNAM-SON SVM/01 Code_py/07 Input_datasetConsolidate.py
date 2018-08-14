@@ -79,7 +79,7 @@ for i in range(5, 1261):
 
     # sector momentum for given day
     Sector_momentum = (file1_Stock_Momentum + file2_Stock_Momentum + file3_Stock_Momentum + file4_Stock_Momentum
-                       + file5_Stock_Momentum + fileIndex_Stock_Momentum)/5
+                       + file5_Stock_Momentum)/5
 
     Close.append(Close_1[i])
     Change.append(Momentum_1[i])  # label predicted, momentum tai ngay thu i

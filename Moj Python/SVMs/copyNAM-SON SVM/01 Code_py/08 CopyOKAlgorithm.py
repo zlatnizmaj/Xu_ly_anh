@@ -44,7 +44,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
-from sklearn.svm import SVC
+from sklearn.svm import SVC  # build lại giải thuật
 
 path_files_CSV = "../dataset_modified_Input/"
 path_Images = '../plots/'
@@ -62,8 +62,8 @@ print(dataset.head())
 print(dataset.describe())
 
 # box and whisker plots
-dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False, figsize=(20, 15))
-plt.savefig(path_Images + 'attribute_distribution_plots')
+dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False)
+plt.savefig(path_Images + 'attribute_histogram_plots')
 plt.show()
 
 # histograms
@@ -73,6 +73,7 @@ plt.show()
 
 # scatter plot matrix
 # scatter_matrix(dataset)
+# plt.show()
 
 # Split-out validation dataset
 array = dataset.values
@@ -100,26 +101,44 @@ scoring = 'accuracy'
 # evaluate each model in turn
 results = []
 names = []
-for name, model in models:
-    kfold = model_selection.KFold(n_splits=10, random_state=seed)
-    print(kfold)
-    # for train, test in kfold.split(X_train):
-    #     print('train: %s, test: %s' % (train, test))
-    cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
-    results.append(cv_results)
-    names.append(name)
-    msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-    print(msg)
-    print('All results (k-fold):\n', results)
+n_epoch = 1
+runs = [0]*n_epoch
+for j in range(len(runs)):
+    print('* epoch {}:'.format(j+1))
+    for name, model in models:
+        kfold = model_selection.KFold(n_splits=10, random_state=seed)
+        print(kfold)
+        # for train, test in kfold.split(X_train):
+        #     print('train: %s, test: %s' % (train, test))
+        cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
+        results.append(cv_results)
+        names.append(name)
+        msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+        print(msg)
+        print('All results (k-fold):\n', results)
 
-model = SVC()
-SVM = SVC(kernel="rbf", decision_function_shape='ovo')
-SVM.fit(X_train, y_train)
+    model = SVC()
+    SVM = SVC(kernel="rbf", decision_function_shape='ovo')
+    SVM.fit(X_train, y_train)
 
-predictions = SVM.predict(X_validation)
-print(predictions[-5:])
-print('Accuracy:\n', accuracy_score(y_validation, predictions))
-print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
+    predictions = SVM.predict(X_validation)
+
+    accuracy_test = accuracy_score(y_validation, predictions)
+    print('Accuracy:\n', accuracy_test)
+    runs[j] = accuracy_test
+    print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
+
+    plt.scatter(X_train, y_train)
+    plt.plot(y_validation, predictions, color='red')
+
+
+    # plt.plot(x_actual, y_actual, color='green')
+    plt.show()
+
+
+mean_accuracy = sum(runs)/len(runs)
+print("n_epoch: {}".format(n_epoch))
+print("Mean_Accuracy: {}".format(mean_accuracy))
 print("Detailed classification report:\n")
 print(classification_report(y_validation, predictions))
 
@@ -160,16 +179,15 @@ class_names = [0, 1]
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names,
                       title='Confusion matrix, without normalization')
-plt.savefig(path_Images + 'Confusion matrix, without normalization')
 
 # Plot normalized confusion matrix
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
-plt.savefig(path_Images + 'Normalized confusion matrix')
+
 plt.show()
 
-# tuned_parameters = [{'C': [0.1, 1, 10, 100, 1000],
+# tuned_parameters = [{'C': [0.01, 0.1, 1, 10, 100],
 #                      'gamma': [0.5, 1, 2, 3, 4]}]
 # tuned_parameters = [{'C': [0.1, 1, 10, 100],
 #                      'gamma': [0.5, 1, 10]}]
