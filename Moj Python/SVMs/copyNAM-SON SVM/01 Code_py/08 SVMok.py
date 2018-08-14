@@ -64,12 +64,12 @@ print(dataset.describe())
 # box and whisker plots
 dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False, figsize=(20, 15))
 plt.savefig(path_Images + 'attribute_distribution_plots')
-plt.show()
+# plt.show()
 
 # histograms
 dataset.hist(bins=20, figsize=(20, 15))
 plt.savefig(path_Images + 'attribute_histogram_plots')
-plt.show()
+# plt.show()
 
 # scatter plot matrix
 # scatter_matrix(dataset)
@@ -81,9 +81,10 @@ y_target = array[:, 6]
 print(X_input[0])
 validation_size = 0.20
 seed = 7
-X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
-                                                                                test_size=validation_size,
-                                                                                random_state=seed)
+
+# X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
+#                                                                                 test_size=validation_size)
+
 
 # Spot Check Algorithms
 models = []
@@ -100,28 +101,47 @@ scoring = 'accuracy'
 # evaluate each model in turn
 results = []
 names = []
-for name, model in models:
-    kfold = model_selection.KFold(n_splits=10, random_state=seed)
-    print(kfold)
-    # for train, test in kfold.split(X_train):
-    #     print('train: %s, test: %s' % (train, test))
-    cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
-    results.append(cv_results)
-    names.append(name)
-    msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-    print(msg)
-    print('All results (k-fold):\n', results)
+n_epoch = 5
+runs = [0]*n_epoch
 
-model = SVC()
-SVM = SVC(kernel="rbf", decision_function_shape='ovo')
-SVM.fit(X_train, y_train)
+for j in range(len(runs)):
+    print('* epoch {}:'.format(j+1))
+    X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
+                                                                                    test_size=validation_size)
+
+    for name, model in models:
+        kfold = model_selection.KFold(n_splits=10)
+        # print(kfold)
+        # for train, test in kfold.split(X_train):
+        #     print('train: %s, test: %s' % (train, test))
+        cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
+        results.append(cv_results)
+        names.append(name)
+        msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+        print(msg)
+
+
+    model = SVC()
+    SVM = SVC(kernel="rbf", decision_function_shape='ovo')
+    SVM.fit(X_train, y_train)
+
+    predictions = SVM.predict(X_validation)
+    accuracy_test = accuracy_score(y_validation, predictions)
+    print('Accuracy:\n', accuracy_test)
+    runs[j] = accuracy_test
+    print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
+    print("Detailed classification report:\n")
+    print(classification_report(y_validation, predictions))
+
+mean_accuracy = sum(runs)/len(runs)
+print("n_epoch: {}".format(n_epoch))
+print("Mean_Accuracy: {}".format(mean_accuracy))
+print("Standard_Deviation: {}".format(np.std(runs, 0)))
 
 predictions = SVM.predict(X_validation)
-print(predictions[-5:])
-print('Accuracy:\n', accuracy_score(y_validation, predictions))
-print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
-print("Detailed classification report:\n")
+print("\nDetailed classification report(last epoch):\n")
 print(classification_report(y_validation, predictions))
+print(predictions[-5:])
 
 
 # plot confusion matrix
@@ -172,7 +192,7 @@ plt.show()
 # tuned_parameters = [{'C': [0.1, 1, 10, 100, 1000],
 #                      'gamma': [0.5, 1, 2, 3, 4]}]
 # tuned_parameters = [{'C': [0.1, 1, 10, 100],
-#                      'gamma': [0.5, 1, 10]}]
+#                      'gamma': [0.1, 1, 10]}]
 # clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
 # clf.fit(X_train, y_train)
 #

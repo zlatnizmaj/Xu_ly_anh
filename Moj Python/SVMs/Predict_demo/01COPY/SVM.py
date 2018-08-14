@@ -53,10 +53,10 @@ start_time = time.time()
 testdataset = Read_file('SVM_Input.csv')
 test_target= Read_file('SVM_Target.csv')
 
-n_epoch = 30
+n_epoch = 2
 w = 0
 r = 1
-runs = [0]*30
+runs = [0]*n_epoch
 
 for j in range(len(runs)):
     # # learning_rate = learning_rate + 0.05
@@ -81,7 +81,8 @@ for j in range(len(runs)):
     accuracy = count * 100 / total
     print('Accuracy: %s' % accuracy)
     runs[j] = accuracy
-
+prediction = clf.predict(testdataset)
+print(prediction[-5:])
 mean = sum(runs)/len(runs)
 print("n_epoch: {}".format(n_epoch))
 print("Mean_Accuracy: {}".format(mean))

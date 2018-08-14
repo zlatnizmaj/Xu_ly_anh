@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Đại học Sư phạm Thành phố Hồ Chí Minh
-
 BÀI TẬP CUỐI KỲ
 Chuyên ngành: Khoa học máy tính
 Khóa: ĐHSP-K28
@@ -10,7 +9,6 @@ Giáo viên hướng dẫn: TS. Bùi Thanh Hùng
 Nhóm học viên:
     1. Nguyễn Phương Nam
     2. Nguyễn Quý Sơn
-
 """
 print(__doc__)
 # Python version
@@ -44,7 +42,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
-from sklearn.svm import SVC  # build lại giải thuật
+from sklearn.svm import SVC
 
 path_files_CSV = "../dataset_modified_Input/"
 path_Images = '../plots/'
@@ -62,8 +60,8 @@ print(dataset.head())
 print(dataset.describe())
 
 # box and whisker plots
-dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False)
-plt.savefig(path_Images + 'attribute_histogram_plots')
+dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False, figsize=(20, 15))
+plt.savefig(path_Images + 'attribute_distribution_plots')
 plt.show()
 
 # histograms
@@ -73,7 +71,6 @@ plt.show()
 
 # scatter plot matrix
 # scatter_matrix(dataset)
-# plt.show()
 
 # Split-out validation dataset
 array = dataset.values
@@ -82,9 +79,9 @@ y_target = array[:, 6]
 print(X_input[0])
 validation_size = 0.20
 seed = 7
-# X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
-#                                                                                 test_size=validation_size,
-#                                                                                 random_state=seed)
+X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
+                                                                                test_size=validation_size,
+                                                                                random_state=seed)
 
 # Spot Check Algorithms
 models = []
@@ -101,47 +98,26 @@ scoring = 'accuracy'
 # evaluate each model in turn
 results = []
 names = []
-n_epoch = 1
-runs = [0]*n_epoch
+for name, model in models:
+    kfold = model_selection.KFold(n_splits=10, random_state=seed)
+    print(kfold)
+    # for train, test in kfold.split(X_train):
+    #     print('train: %s, test: %s' % (train, test))
+    cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
+    results.append(cv_results)
+    names.append(name)
+    msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+    print(msg)
+    print('All results (k-fold):\n', results)
 
-for j in range(len(runs)):
-    print('* epoch {}:'.format(j+1))
-    X_train, X_validation, y_train, y_validation = model_selection.train_test_split(X_input, y_target,
-                                                                                    test_size=validation_size)
-    for name, model in models:
-        kfold = model_selection.KFold(n_splits=10)
-        print(kfold)
-        # for train, test in kfold.split(X_train):
-        #     print('train: %s, test: %s' % (train, test))
-        cv_results = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=scoring)
-        results.append(cv_results)
-        names.append(name)
-        msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
-        print(msg)
-        print('All results (k-fold):\n', results)
+model = SVC()
+SVM = SVC(kernel="rbf", decision_function_shape='ovo')
+SVM.fit(X_train, y_train)
 
-    model = SVC()
-    SVM = SVC(kernel="rbf", decision_function_shape='ovo')
-    SVM.fit(X_train, y_train)
-
-    predictions = SVM.predict(X_validation)
-
-    accuracy_test = accuracy_score(y_validation, predictions)
-    print('Accuracy:\n', accuracy_test)
-    runs[j] = accuracy_test
-    print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
-
-    # plt.scatter(X_train, y_train)
-    # plt.plot(y_validation, predictions, color='red')
-
-
-    # plt.plot(x_actual, y_actual, color='green')
-    # plt.show()
-
-
-mean_accuracy = sum(runs)/len(runs)
-print("n_epoch: {}".format(n_epoch))
-print("Mean_Accuracy: {}".format(mean_accuracy))
+predictions = SVM.predict(X_validation)
+print(predictions[-5:])
+print('Accuracy:\n', accuracy_score(y_validation, predictions))
+print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
 print("Detailed classification report:\n")
 print(classification_report(y_validation, predictions))
 
@@ -182,34 +158,34 @@ class_names = [0, 1]
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names,
                       title='Confusion matrix, without normalization')
+plt.savefig(path_Images + 'Confusion matrix, without normalization')
 
 # Plot normalized confusion matrix
 plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
-
+plt.savefig(path_Images + 'Normalized confusion matrix')
 plt.show()
 
-# tuned_parameters = [{'C': [0.01, 0.1, 1, 10, 100],
-#                      'gamma': [0.5, 1, 2, 3, 4]}]
-# tuned_parameters = [{'C': [0.1, 1, 10, 100],
-#                      'gamma': [0.5, 1, 10]}]
-# clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
-# clf.fit(X_train, y_train)
-#
-# # print(clf.cv_results_)
-# print(clf.best_params_)
-# print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
-# print(clf.best_estimator_.score(X_validation, y_validation))
+# tim C va gamma toi uu
+tuned_parameters = [{'C': [0.1, 1, 10, 100],
+                     'gamma': [0.1, 1, 10]}]
+clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
+clf.fit(X_train, y_train)
+
+# print(clf.cv_results_)
+print(clf.best_params_)
+print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
+print(clf.best_estimator_.score(X_validation, y_validation))
 
 
 # print(X_validation,Y_validation), lưu ra model, mỗi lần change
 
-# filename = path_files_CSV + 'SVM_finalized_model.sav'
-#
-# SVM_model_pkl = open(filename, 'wb')
-# dump(SVM, SVM_model_pkl)
-# SVM_model_pkl.close()
+filename = path_files_CSV + 'SVM_finalized_model.sav'
+
+SVM_model_pkl = open(filename, 'wb')
+dump(SVM, SVM_model_pkl)
+SVM_model_pkl.close()
 
 # Loading the saved decision tree model pickle
 # SVM_model_pkl = open(filename, 'rb')
@@ -219,12 +195,3 @@ plt.show()
 # time for run training
 time_taken = time.time() - start_time
 print("total_time : {}".format(time_taken))
-
-
-
-
-
-
-
-
-
