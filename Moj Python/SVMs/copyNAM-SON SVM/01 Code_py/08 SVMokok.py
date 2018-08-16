@@ -62,12 +62,12 @@ print(dataset.describe())
 # box and whisker plots
 dataset.plot(kind='box', subplots=True, layout=(2, 4), sharex=False, sharey=False, figsize=(20, 15))
 plt.savefig(path_Images + 'attribute_distribution_plots')
-plt.show()
+# plt.show()
 
 # histograms
 dataset.hist(bins=20, figsize=(20, 15))
 plt.savefig(path_Images + 'attribute_histogram_plots')
-plt.show()
+# plt.show()
 
 # scatter plot matrix
 # scatter_matrix(dataset)
@@ -165,7 +165,7 @@ plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
 plt.savefig(path_Images + 'Normalized confusion matrix')
-plt.show()
+# plt.show()
 
 # tim C va gamma toi uu
 tuned_parameters = [{'C': [0.1, 1, 10, 100],
