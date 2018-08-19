@@ -34,6 +34,7 @@ import time
 import itertools
 import numpy as np
 from pickle import dump
+import  pandas
 import pickle as pkl
 from pandas.plotting import scatter_matrix
 import matplotlib.pyplot as plt
@@ -43,6 +44,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.svm import SVC
+from sklearn.base import BaseEstimator
 
 path_files_CSV = "../dataset_modified_Input/"
 path_Images = '../plots/'
@@ -111,17 +113,20 @@ for name, model in models:
     print('All results (k-fold):\n', results)
 
 model = SVC()
-SVM = SVC(kernel="rbf", decision_function_shape='ovo')
+SVM = SVC(kernel="rbf", C=100, gamma=0.1, decision_function_shape='ovo')  # C=1 0.58 gamma=auto, C=0.5 0.59 gamma=0.5
+# C=100, gamma=0.1`
 SVM.fit(X_train, y_train)
 
+print('gamma:', SVM.gamma)
 predictions = SVM.predict(X_validation)
 print(predictions[-5:])
 print('Accuracy:\n', accuracy_score(y_validation, predictions))
 print('Confusion_matrix:\n', confusion_matrix(y_validation, predictions))
 print("Detailed classification report:\n")
 print(classification_report(y_validation, predictions))
-
-
+tn, fp, fn, tp = confusion_matrix(y_validation, predictions).ravel()
+print('tn:', tn, ', fp:', fp, '\nfn:', fn, ', tp:', tp)
+print(SVM.decision_function(X_validation))
 # plot confusion matrix
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
@@ -165,18 +170,18 @@ plt.figure()
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
 plt.savefig(path_Images + 'Normalized confusion matrix')
-# plt.show()
+plt.show()
 
 # tim C va gamma toi uu
-tuned_parameters = [{'C': [0.1, 1, 10, 100],
-                     'gamma': [0.1, 1, 10]}]
-clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True)
-clf.fit(X_train, y_train)
-
+# tuned_parameters = [{'C': [0.1, 1, 10, 100],
+#                      'gamma': [0.1, 1, 10]}]
+# clf = GridSearchCV(SVC(kernel='rbf'), tuned_parameters, cv=10, scoring='accuracy', return_train_score=True, n_jobs=-1)
+# clf.fit(X_train, y_train)
+#
 # print(clf.cv_results_)
-print(clf.best_params_)
-print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
-print(clf.best_estimator_.score(X_validation, y_validation))
+# print(clf.best_params_)
+# print(confusion_matrix(y_validation, clf.best_estimator_.predict(X_validation)))
+# print(clf.best_estimator_.score(X_validation, y_validation))
 
 
 # print(X_validation,Y_validation), lưu ra model, mỗi lần change
